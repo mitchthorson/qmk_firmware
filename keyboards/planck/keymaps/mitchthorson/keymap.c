@@ -98,19 +98,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Lower
  * ,------------------------------------------------------------------------------------.
- * |   ~  |   !  |   @  |   #  |   $  |   %  |   -  |   7  |   8  |   9  |   0   | Bksp |
+ * |   ~  |   !  |   @  |   #  |   $  |   %  |   +  |   7  |   8  |   9  |   0   | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+-------|
- * | Del  |      |      |      |      |      |   =  |   4  |   5  |   6  | PgUp |  \    |
+ * | Del  |      |      |      |      |      |   -  |   4  |   5  |   6  | PgUp |  \    |
  * |------+------+------+------+------+------+------+------+------+------+------+-------|
- * |      |      |      |      |      |      |   +  |   1  |   2  |   3  | PgDn | Home  |
+ * |      |      |      |      |      |      |   =  |   1  |   2  |   3  | PgDn | Home  |
  * |------+------+------+------+------+------+------+------+------+------+------+-------|
  * |      |      |      |      |      |             |      |      |      | Prnt | End   |
  * `------------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_planck_grid(
-    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_MINS, KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
-    KC_DEL,  _______, _______, _______, _______, _______, KC_EQL , KC_4,    KC_5,    KC_6,    KC_PGUP, KC_BSLS,
-    _______, _______, _______, _______, _______, _______, KC_PLUS, KC_1,    KC_2,    KC_3,    KC_PGDN, KC_HOME,
+    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_PLUS, KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
+    KC_DEL,  _______, _______, _______, _______, _______, KC_MINS, KC_4,    KC_5,    KC_6,    KC_PGUP, KC_BSLS,
+    _______, _______, _______, _______, _______, _______, KC_EQL,  KC_1,    KC_2,    KC_3,    KC_PGDN, KC_HOME,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_PSCR, KC_END
 ),
 
@@ -163,9 +163,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_ADJUST] = LAYOUT_planck_grid(
-    _______, QK_BOOT,   DEBUG,   RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD,  RGB_VAI, RGB_VAD, KC_DEL ,
-    _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK,  DVORAK,  PLOVER,  _______,
-    _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  TERM_ON, TERM_OFF, _______, _______, _______,
+    _______, QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD,  RGB_VAI, RGB_VAD, KC_DEL ,
+    _______, _______, MU_NEXT, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK,  DVORAK,  PLOVER,  _______,
+    _______, AU_PREV, AU_NEXT, MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______, _______
 )
 
